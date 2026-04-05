@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 16 - Notes App</title>
+  <link rel="stylesheet" href="starter-styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My Notes</h1>
+    
+    <form id="noteForm">
+      <input 
+        type="text" 
+        id="noteTitle" 
+        placeholder="Note title..."
+        required
+      >
+      <textarea 
+        id="noteContent" 
+        placeholder="Note content..."
+        required
+      ></textarea>
+      <button type="submit">Add Note</button>
+    </form>
+    
+    <div id="notesList">
+      <!-- Notes will appear here -->
+    </div>
+  </div>
+
+  <script src="starter-script.js"></script>
+</body>
+</html>
