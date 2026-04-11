@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Helper App</title>
+  <link rel="stylesheet" href="study-helper.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Study Helper</h1>
+
+    <!-- Add Card -->
+    <div class="add-card">
+      <input type="text" id="termInput" placeholder="Term">
+      <input type="text" id="defInput" placeholder="Definition">
+      <button id="addCardBtn">Add Card</button>
+    </div>
+
+    <!-- Card List -->
+    <h2>All Cards</h2>
+    <ul id="cardList"></ul>
+
+    <!-- Quiz Mode -->
+    <h2>Quiz Mode</h2>
+    <button id="startQuizBtn">Start Quiz</button>
+    <div id="quizArea" class="hidden">
+      <p id="quizTerm"></p>
+      <button id="showAnswerBtn">Show Answer</button>
+      <p id="quizDefinition" class="hidden"></p>
+      <button id="gotItBtn">Got it</button>
+      <button id="needReviewBtn">Need review</button>
+    </div>
+
+    <!-- Statistics -->
+    <h2>Progress</h2>
+    <div class="progress-bar">
+      <div id="progressFill"></div>
+    </div>
+    <p>Total: <span id="totalCount">0</span></p>
+    <p>Mastered: <span id="masteredCount">0</span></p>
+    <p>Completion: <span id="completionPercent">0%</span></p>
+  </div>
+
+  <script src="study-helper.js"></script>
+</body>
+</html>

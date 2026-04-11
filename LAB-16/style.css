@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  max-width: 500px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+}
+
+#taskInput:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+#addBtn {
+  padding: 12px 24px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#addBtn:hover {
+  background: #5568d3;
+}
+
+.bonus-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.bonus-buttons button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #6c63ff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.bonus-buttons button:hover {
+  background: #4b47c9;
+}
+
+#taskList {
+  list-style: none;
+}
+
+#taskList li {
+  padding: 15px;
+  background: #f8f9fa;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s;
+}
+
+.task-text {
+  flex: 1;
+  font-size: 16px;
+}
+
+.complete-btn, .delete-btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.complete-btn {
+  background: #28a745;
+  color: white;
+}
+
+.complete-btn:hover {
+  background: #218838;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+
+/* Completed task styling */
+#taskList li.completed {
+  opacity: 0.6;
+  background: #e8f5e9;
+}
+
+#taskList li.completed .task-text {
+  text-decoration: line-through;
+  color: #666;
+}
+
+#counter {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
